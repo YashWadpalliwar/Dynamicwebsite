@@ -5,7 +5,7 @@ let successFullMessage;
 
 // universal array for blogs
 let getHome = (req, res) => {
-    res.status(200).render("home")
+    res.status(200).render("index")
 }
 
 let getCompose = (req, res) => {
