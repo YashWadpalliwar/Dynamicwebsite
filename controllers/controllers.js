@@ -1,6 +1,3 @@
-let blogs = [
-
-]
 let successFullMessage;
 
 // universal array for blogs
@@ -13,9 +10,10 @@ let getCompose = (req, res) => {
 }
 
 let postCompose = (req, res) => {
-    console.log(req.body);
+    console.log(req.body)
     successFullMessage = `your blog ${req.body.blog_title}, has been posted successfully !`
     res.status(201).render("compose_blog", { resSuccessFullMessage: successFullMessage })
+    
 }
 
 export { getHome, getCompose, postCompose } 

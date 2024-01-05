@@ -11,7 +11,6 @@
     --color4: #F05941;
 }
 
-
 /* Apply all pages */
 * {
     padding: 0%;
@@ -50,12 +49,12 @@
 .heros-section {
     width: 100%;
     /* height: 50vh; */
-    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); 
+/* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); 
     background-position: center center;
     background-size: cover;
 } */
 
-.header{
+.header {
     width: 100%;
     height: calc(100vh - 60px);
     background: url(img/header.png);
@@ -65,11 +64,11 @@
     align-items: center;
 }
 
-.content{
+.content {
     text-align: center;
 }
 
-.heading{
+.heading {
     color: #fff;
     text-transform: capitalize;
     font-size: 80px;
@@ -77,17 +76,17 @@
     margin-bottom: 80px;
 }
 
-.heading .small{
+.heading .small {
     display: block;
     font-size: 40px;
 }
 
-.heading .no-fill h1{
+.heading .no-fill h1 {
     color: transparent;
     -webkit-text-stroke: 2px #fff;
 }
 
-.btn{
+.btn {
     padding: 10px 20px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.7);
@@ -108,6 +107,7 @@
     background-color: #3672bc;
     color: #fff;
 }
+
 /* 
 .image img {
     width: 100%;
@@ -218,6 +218,87 @@ span {
 
 /* blog page end */
 
+/* text editors start */
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5px;
+
+}
+
+.options button {
+    margin-left: 1.6rem;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #ffff, 0 0 0 3px #020929;
+}
+
+input[type="color"]::-moz-color-swatch {
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #ffff, 0 0 0 3px #020929;
+}
+
+.input-wrapper input {
+    margin: 10px;
+}
+
+#text-input {
+    margin-top: 10px;
+    border: 1px solid #dddddd;
+    padding: 20px;
+    height: 80vh;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+button {
+    height: 28px;
+    width: 28px;
+    display: grid;
+    place-items: center;
+    border: none;
+    border-radius: 3px;
+    background-color: #ffffff;
+    outline: none;
+    color: #020929;
+}
+
+.active {
+    background-color: #e0e9ff;
+}
+
+/* text editors end */
+form #btnsub {
+    padding-left: 17rem;
+}
+
+form .btn1 {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    width: 70%;
+}
+
+.header .comp {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #000;
+    border-radius: 5%;
+    background-color: khaki;
+    padding: 1.5%;
+    border: #000;
+    color: transparent;
+    -webkit-text-stroke: 2px #000;
+}
+
+.header .comp:hover {
+    background-color: greenyellow;
+    color: #fff;
+
+}
 
 /* footer */
 .footer_wrapper {

@@ -1,13 +1,16 @@
 <%- include('./partials/header.ejs'); %>
 
   <div class="image">
+
     <header class="header">
       <div class="content">
         <h1 class="heading">
           <span class="small">Welcome to the world of</span>
-          <span class="no-fill"><h1><b>Blog 4U</b></h1></span>
+          <span class="no-fill">
+            <h1><b>Blog 4U</b></h1>
+          </span>
         </h1>
-        <a href="/editor" class="btn">write a blog</a>
+        <a href="/compose-blog" class="comp"><b>write a blog</b></a>
       </div>
     </header>
 
@@ -74,5 +77,104 @@
     </div>
   </section>
   <!-- blog section ends -->
+
+  <section>
+    <div class="container bg-primary rounded p-5 mb-4">
+      <h2 class="text-light"><b>Text Editor</b></h2>
+      <div class="options bg-light rounded p-3">
+
+        <button id="bold" class="option-button">
+          <i class="fa-solid fa-bold"></i>
+        </button>
+
+        <button id="italic" class="option-button">
+          <i class="fa-solid fa-italic"></i>
+        </button>
+
+        <button id="underline" class="option-button">
+          <i class="fa-solid fa-underline"></i>
+        </button>
+
+        <button id="strikethrough" class="option-button">
+          <i class="fa-solid fa-strikethrough"></i>
+        </button>
+
+        <button id="superscript" class="option-button">
+          <i class="fa-solid fa-superscript"></i>
+        </button>
+
+        <button id="subscript" class="option-button">
+          <i class="fa-solid fa-subscript"></i>
+        </button>
+
+        <!-- List start -->
+        <button id="insertOrderedList" class="option-button">
+          <div class="fa-solid fa-list-ol"></div>
+        </button>
+
+        <button id="insertOrderedList" class="option-button">
+          <div class="fa-solid fa-list"></div>
+        </button>
+
+        <!-- Undo/Redo start-->
+
+        <button id="insertOrderedList" class="option-button">
+          <div class="fa-solid fa-rotate-left"></div>
+        </button>
+
+
+        <button id="insertOrderedList" class="option-button">
+          <div class="fa-solid fa-rotate-right"></div>
+        </button>
+        <!-- Undo/Redo end-->
+
+        <button id="createLink" class="adv-option-button">
+          <i class="fa fa-link"></i>
+        </button>
+
+        <button id="unlink" class="adv-option-button">
+          <i class="fa fa-unlink"></i>
+        </button>
+
+        <!-- Alignment -->
+
+        <button id="justifyLeft" class="option-button align">
+          <i class="fa-solid fa-align-left"></i>
+        </button>
+
+
+        <button id="justifyLeft" class="option-button align">
+          <i class="fa-solid fa-align-center"></i>
+        </button>
+
+
+        <button id="justifyLeft" class="option-buttonalign">
+          <i class="fa-solid fa-align-right"></i>
+        </button>
+        <!-- List end -->
+
+        <!-- Font start -->
+        <section id="font-name" class="adv-option-button"></section>
+        <section id="font-size" class="adv-option-button"></section>
+
+        <!-- Font end -->
+
+        <!-- Color start -->
+        <div class="input-wrapper">
+          <input type="color" id="foreColor" class="adv-option-button">
+          <label for="foreColor">Font Color</label>
+        </div>
+
+        <div class="input-wrapper">
+          <input type="color" id="backColor" class="adv-option-button">
+          <label for="backColor">Highlight Color</label>
+        </div>
+        <!-- Color end -->
+      </div>
+      <div id="text-input" contenteditable="true"></div>
+    </div>
+  </section>
+
+  <script src="public/main.js"></script>
 
   <%- include('./partials/footer.ejs'); %>
